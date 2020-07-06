@@ -7,6 +7,11 @@
 <main>
 	<h1>Hello {name}!</h1>
 	<Counter />
+	<Counter inferior={2} superior={8}/>
+<!--	If we set inferior = 2 and superior = 8 as variables above we can set those properties like -->
+<!--	<Counter {inferior} {superior}/>-->
+<!--	instead of -->
+<!--	<Counter inferior={inferior} superior={superior}/>-->
 </main>
 
 <style>
