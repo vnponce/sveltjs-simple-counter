@@ -1,10 +1,13 @@
 {
   "name": "svelte-app",
   "version": "1.0.0",
+  "homepage": "https://vnponce.github.io/sveltjs-simple-counter/",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "start": "sirv public"
+    "start": "sirv public",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^12.0.0",
